@@ -1,0 +1,15 @@
+{
+  "name": "mercadoliebre",
+  "version": "1.0.0",
+  "description": "<h1>Trabajo Practico</h1>\r <h2>Chalup Aldo</h2>\r <h3> MercadoLiebre Maquetado</h3>",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
