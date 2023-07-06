@@ -66,3 +66,14 @@
     
     font-size: x-large;
 }
+/*FOOTER*/
+.home__footer--article--div-tarjeta {
+    margin: 25px;
+}
+.home__footer--article-copyright {
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 22px;
+}
+
+
