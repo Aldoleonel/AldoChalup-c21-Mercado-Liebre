@@ -23,6 +23,8 @@ header {
     background-color: var(--colorAmarillo);
     font-family: var(--tipografiaGeneral);
     font-size: 12px;
+    display: flex;
+    flex-direction: column;
     
 }
 a {
@@ -38,8 +40,22 @@ li {
 ul {
     padding: 0;
 }
-/*BODY*/
 
+
+/*MAIN*/
+main {
+    width: 90vw;
+    margin: 0 auto;
+    font-family: var(--tipografiaGeneral);
+    color: var(--colorGrisOscuro);
+}
+main i {
+    color: green;
+    border: 1px solid green;
+    padding: 5%;
+    border-radius: 50%;
+    text-align: center;
+}
 
 
 
@@ -58,3 +74,31 @@ Footer i {
 }
 
 
+/*MEDIA QUERY*/
+
+
+@media (min-width: 481px){
+    *{
+        box-sizing: border-box;    
+        margin: 0;
+        max-width: 1180px;
+    }
+    main i {
+        display: flex;
+        width: 15%;
+        color: green;
+        border: 1px solid green;
+        
+        border-radius: 50%;
+        justify-content: center;
+    }
+    .home__main--box-precio {
+        padding: 4%;
+    }
+}
+
+@media (min-width: 769px) {
+    * {
+        max-width: 1920px;
+    }
+}

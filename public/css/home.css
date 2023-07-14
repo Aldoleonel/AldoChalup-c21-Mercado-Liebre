@@ -1,50 +1,88 @@
 /*HEADER*/
 .home__header--logo {
-    width: 40%;    
+    width: 40%;
     margin-left: 30px;
-    margin-top: 30px ;
+    margin-top: 30px;
     margin-bottom: 20px;
     display: inline-block;
-    
-    
+
+
 }
+
 .header__input--contenedor {
     margin-left: 15px;
 }
 
-.header__input {    
-    margin-bottom: 3px;    
+.home__header-box-input-lupa {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.header__input {
+    margin-bottom: 3px;
     width: 200px;
     padding-top: 3px;
-    padding-bottom: 3px;     
+    padding-bottom: 3px;
 }
+
+.home__header-box-lupa {
+    display: flex;
+    align-items: top;
+    ;
+    width: 250px;
+
+}
+
 .header__div--Lupa-busqueda {
+
     background-color: var(--colorGrisClaro);
     border: 1px solid var(--colorGrisOscuro);
-    padding: 1px;
+    padding: 3px;
     border-radius: 3px;
-    margin-left: 15px; 
-    padding-left: 3px;
-    padding-right: 3px;
-          
+    margin-left: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+
+
 }
+
+.header__parrafo--contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+
 .header__parrafo {
     padding-left: 10%;
     margin-top: 0px;
-    display: inline-block;  
-    padding-left: 0;    
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
     font-size: 12px;
     margin-bottom: 15px;
 }
+
+.home__header--descripcion {
+    display: none;
+}
+
 .home__header--nav--menu ul {
     margin-bottom: 20px;
-    
+
 }
-.home__header--dolar {    
-    margin-left: 15%;
-    display: inline-block;
+
+.home__header--dolar {
+
+
+    display: flex;
     margin-top: 20px;
-    
+    width: 5%;
+
+
+
 }
 
 
@@ -56,24 +94,102 @@
 .home__header--bars {
     background-color: var(--colorCeleste);
     color: white;
-    display: inline-block;    
+    display: inline-block;
     border-radius: 5px;
     padding-left: 12px;
     padding-right: 12px;
     padding-top: 7px;
     padding-bottom: 7px;
     margin-bottom: 25px;
-    
+
     font-size: x-large;
+
 }
+
+.home__header-baner {
+    display: flex;
+    width: 100%;
+}
+
+
+/*MAIN*/
+.home__main-p {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+
+}
+
+.home__main-oferta {
+    color: green;
+}
+
+
+main article img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.home_main_img-baner {
+    display: none;
+}
+
+main img {
+    display: flex;
+    width: 100%;
+}
+
+.home__main_separador {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
 /*FOOTER*/
 .home__footer--article--div-tarjeta {
     margin: 25px;
 }
+
 .home__footer--article-copyright {
     text-align: left;
     margin-left: 20px;
     margin-bottom: 22px;
 }
 
+/*MEDIA QUERY*/
+@media (min-width:481px) {
+    .home__header--descripcion {
+        display: inline-block;
+        padding-left: 1%;
+    }
+    .home__header--dolar {
+        width: 3%;
+    }
 
+    .font-awesome {
+        display: none;
+    }
+    .home__article-box {
+        background-color: white;
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+    .home__main--imagen {
+        margin-top: 15px;
+    }
+    .home_main_img-baner {
+        display: flex;
+    }
+
+}
+@media (min-width:769px){
+    .home__header--dolar {
+        width: 1.5%;
+        justify-content: center;
+    }
+    .header__input--contenedor {
+        width: auto;
+    }
+}
