@@ -14,6 +14,9 @@ Descripciones: 16px
     --tipografiaGeneral: 'Open Sans' , 'sans-serif';
     
 }
+body {
+    background-color: var(--colorGrisClaro);
+}
 *{
     box-sizing: border-box;    
     margin: 0;

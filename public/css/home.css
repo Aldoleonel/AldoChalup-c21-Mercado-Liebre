@@ -1,12 +1,16 @@
 /*HEADER*/
 .home__header--logo {
-    width: 40%;
+    width: 50%;
     margin-left: 30px;
     margin-top: 30px;
     margin-bottom: 20px;
-    display: inline-block;
+    height: 50px;
 
 
+}
+.home__header-container{
+    display: flex;
+    align-items: center;
 }
 
 .header__input--contenedor {
@@ -14,35 +18,40 @@
 }
 
 .home__header-box-input-lupa {
-    display: flex;
-    justify-content: flex-start;
-    align-items: baseline;
+   position: relative; 
+   width: 50%;
+   margin: 30px;
+             
 }
 
-.header__input {
+.home__header-box-input-lupa input {
+    border: 1px solid white;
     margin-bottom: 3px;
-    width: 200px;
+    width: 100%;
     padding-top: 3px;
-    padding-bottom: 3px;
+    height: 40px;
+    border-radius: 3px;
+    font-family: var(--tipografiaGeneral);
+    
+    
 }
 
-.home__header-box-lupa {
-    display: flex;
-    align-items: top;
-    ;
-    width: 250px;
+.home__header-box-input-lupa a {  
+    position: absolute;
+    right: 0;
+    top: 0;
 
 }
 
 .header__div--Lupa-busqueda {
 
-    background-color: var(--colorGrisClaro);
-    border: 1px solid var(--colorGrisOscuro);
-    padding: 3px;
+    background-color:white;
+    padding: 10px; 
     border-radius: 3px;
-    margin-left: 5px;
-    padding-left: 4px;
-    padding-right: 4px;
+    font-size: 15px;   
+    color: var(--colorGrisClaro)
+    
+    
 
 
 }
@@ -79,7 +88,8 @@
 
     display: flex;
     margin-top: 20px;
-    width: 5%;
+    width: 100%;
+    justify-content: flex-end;
 
 
 
@@ -114,16 +124,27 @@
 
 /*MAIN*/
 .home__main-p {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: var(--tipografiaGeneral);
     color: black;
-
+    display: flex;
+    font-weight: 700;
+    font-size: 25px;
 }
 
 .home__main-oferta {
     color: green;
+    width: 70%;
+    font-weight: 400;
+}
+.home__main-precio {
+    width: 30%;
 }
 
+.home__main--box-precio {
+    border-top: 1px solid var(--colorGrisClaro);
+    background-color: white;
 
+}
 main article img {
     display: flex;
     justify-content: center;
@@ -175,6 +196,7 @@ main img {
     .home__article-box {
         background-color: white;
         box-shadow: 0px 0px 10px rgb(100,100,100);
+        margin: 15px;
     }
     .home__main--imagen {
         margin-top: 15px;
