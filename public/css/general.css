@@ -25,7 +25,7 @@ body {
 header {
     background-color: var(--colorAmarillo);
     font-family: var(--tipografiaGeneral);
-    font-size: 12px;
+    font-size: 9px;
     display: flex;
     flex-direction: column;
     
@@ -86,22 +86,32 @@ Footer i {
         margin: 0;
         max-width: 1180px;
     }
-    main i {
-        display: flex;
-        width: 15%;
-        color: green;
-        border: 1px solid green;
-        
-        border-radius: 50%;
-        justify-content: center;
-    }
     .home__main--box-precio {
         padding: 4%;
+        position: relative;
     }
+    main i {
+        /* display: flex; */
+        /* width: 15%; */
+        color: green;
+        border: 1px solid green;   
+        border-radius: 50%;
+        position: absolute;
+        right: 10px;
+        top: -20px;
+        
+        
+    }
+    
+
+    
+    
+
 }
 
 @media (min-width: 769px) {
     * {
         max-width: 1920px;
     }
+    
 }
