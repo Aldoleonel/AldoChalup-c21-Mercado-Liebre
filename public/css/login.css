@@ -179,7 +179,10 @@ header {
 }
 .login-box {
     width: 70%;
-    
+    border: 1px solid var(--colorGrisOscuro);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px;
 }
 .login-correo-box input {
     width: 100%;
@@ -329,5 +332,9 @@ Footer i {
         }
         .header__parrafo--contenedor {
             gap: 5px;
+        }
+        /*MAIN*/
+        .login-box {
+            width: 35%;
         }
     }

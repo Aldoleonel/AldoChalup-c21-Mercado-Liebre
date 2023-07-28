@@ -174,6 +174,7 @@ header {
     width: 100%;
     
     
+    
 }
 .form__registro {
     width:70%;
@@ -182,6 +183,7 @@ header {
     border: 1px solid var(--colorGrisOscuro);
     padding: 10px;
     border-radius: 10px;
+    box-shadow: 0px 0px 20px;
 }
 .form__registro input {
     width: 100%;
@@ -419,8 +421,9 @@ Footer i {
         /*MAIN*/
 
         .form__registro {
-            width: 45%;
-            
+            width: 35%;
+            box-shadow: 0px 0px 20px;
+            padding: 30px;
         }
         
 
