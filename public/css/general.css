@@ -46,25 +46,14 @@ ul {
 
 
 /*MAIN*/
-main {
-    width: 90vw;
-    margin: 0 auto;
-    font-family: var(--tipografiaGeneral);
-    color: var(--colorGrisOscuro);
-}
-main i {
-    color: green;
-    border: 1px solid green;
-    padding: 5%;
-    border-radius: 50%;
-    text-align: center;
-}
+
 
 
 
 
 /*FOOTER*/
 footer {
+    background-color: white;
     text-align: center;
     font-size: 12px;
     color: var(--colorGrisOscuro);
@@ -86,23 +75,7 @@ Footer i {
         margin: 0;
         max-width: 1180px;
     }
-    .home__main--box-precio {
-        padding: 4%;
-        position: relative;
-    }
-    main i {
-        /* display: flex; */
-        /* width: 15%; */
-        color: green;
-        border: 1px solid green;   
-        border-radius: 50%;
-        position: absolute;
-        right: 10px;
-        top: -20px;
-        
-        
-        
-    }
+    
     
 
     
