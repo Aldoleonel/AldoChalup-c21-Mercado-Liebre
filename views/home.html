@@ -29,6 +29,9 @@
                 </div>
             </div>
             <nav class="home__header--nav--menu">
+                <div class="font-awesome">
+                    <button onclick="document.querySelector('.home__header--descripcion').classList.toggle('showMenu')"  class="home__header--bars"><i class="fa fa-bars fa-lg"></i></button>
+                </div>
                 <div class="home__header--descripcion">
                     <ul>
                         <li><a href="#">Ofertas</a></li>
@@ -42,9 +45,7 @@
                         <li><a href="#">Mis compras </a><i class="fa-solid fa-basket-shopping"></i></li>
                     </ul>
                 </div>
-                <div class="font-awesome">
-                    <a href="" class="home__header--bars"><i class="fa fa-bars fa-lg"></i></a>
-                </div>
+                
         </div>
         </nav>
         <img class="home__header-baner" src="/images/img-home-banner.jpg" alt="img-home-banner">
@@ -52,48 +53,43 @@
     <main>
         <div>
             <article class="home__main-article">
+                <h3 class="h3_width100">Basado en tu ultima visita</h3>
+                
 
-                <h3 class="h3_width100">Basado en tu última visita</h3>
                 <div class="home__article-box">
-                    <img class="main__article-img" src="/images/img-cafetera-moulinex.jpg" alt="Cafetera Moulinex">
+                    <img class="home__main--imagen" src="/images/img-cafetera-moulinex.jpg" alt="cafetera Moulinex">
+                    <div class="home__main--box-precio">
+                        <i class="fa-solid fa-truck"></i>
+                        <div class="home__main-p">
+                            <p class="home__main-precio">$6.770</p>
+                            <p class="home__main-oferta">40% OFF</p>
+                        </div>
+                        <h3 class="home__main_separador">Cafetera Moulinex</h3>
+                    </div>
+
+                </div>
+                <div class="home__article-box">
+                    <img class="home__main--imagen" src="/images/img-macbook-pro-2019.jpg" alt="macbook pro 2019">
                     <div class="home__main--box-precio">
                         <i class="fa-solid fa-truck"></i>
                         <div>
                             <div class="home__main-p">
-                                <p class="home__main-precio">$6.770</p>
-                                <p class="home__main-oferta">40% OFF</p>
+                                <p class="home__main-precio">$230.000</p>
+                                <p class="home__main-oferta">20% OFF</p>
                             </div>
-                        </div>
-                        <h3 class="home__main_separador">Cafetera Moulinex</h3>
-                    </div>
-                </div>
-                <div class="home__article-box">
-                    <img class="main__article-img" src="/images/img-macbook-pro-2019.jpg" alt="macbook pro 2019">
-                    <div class="home__main--box-precio">
-                        <i class="fa-solid fa-truck"></i>
-                        <div class="home__main-p">
-                            <p class="home__main-precio">$230.000</p>
-                            <p class="home__main-oferta">20% OFF</p>
-                        </div>
-
-
-                        <div>
                             <h3 class="home__main_separador">MacBook Pro 2019</h3>
                         </div>
                     </div>
                 </div>
-
                 <div class="home__article-box">
                     <img class="home__main--imagen" src="/images/img-samsung-galaxy-s10.jpg" alt="samsung galaxy s10">
                     <div class="home__main--box-precio">
                         <i class="fa-solid fa-truck"></i>
-                        <div class="home__main-p">
-                            <p class="home__main-precio">$70.500</p>
-                            <p class="home__main-oferta">10% OFF</p>
-                        </div>
-
-
                         <div>
+                            <div class="home__main-p">
+                                <p class="home__main-precio">$70.500</p>
+                                <p class="home__main-oferta">10% OFF</p>
+                            </div>
                             <h3 class="home__main_separador">Samsung Galaxy S10</h3>
                         </div>
                     </div>
@@ -102,21 +98,19 @@
                     <img class="home__main--imagen" src="/images/img-tv-samsung-smart.jpg" alt="tv samsung smart">
                     <div class="home__main--box-precio">
                         <i class="fa-solid fa-truck"></i>
-                        <div class="home__main-p">
-                            <p class="home__main-precio">$23.200</p>
-                            <p class="home__main-oferta">5% OFF</p>
-                        </div>
-
                         <div>
+                            <div class="home__main-p">
+                                <p class="home__main-precio">$23.200</p>
+                                <p class="home__main-oferta">5% OFF</p>
+                            </div>
                             <h3 class="home__main_separador">SmartTv Samsung 43"</h3>
                         </div>
                     </div>
                 </div>
-
             </article>
             <article class="home__main-article">
                 <h3 class="h3_width100">Ofertas</h3>
-                <!-- <img class="home_main_img-baner" src="/images/img-home-banner.jpg" alt="img-home-banner"> -->
+                
 
                 <div class="home__article-box">
                     <img class="home__main--imagen" src="/images/img-cafetera-moulinex.jpg" alt="cafetera Moulinex">
@@ -175,7 +169,7 @@
 
     <footer>
         <div>
-            <article>
+            <article class="home__footer-article">
                 <div class="home__footer--article--div-tarjeta">
                     <i class="fa-solid fa-credit-card"></i>
                     <h3>Pagá con tarjeta o en efectivo</h3>
@@ -194,8 +188,8 @@
                     <p>¿No te gusta? ¡Devuélvelo! En Mercado Liebre, no hay nada que no puedas hacer,
                         porque estás siempre protegido.</p>
                 </div>
-                <p class="home__footer--article-copyright">Copyright &copy; 1999-2020 MercadoLiebre S.R.L.</p>
             </article>
+            <p class="home__footer--article-copyright">Copyright &copy; 1999-2020 MercadoLiebre S.R.L.</p>
         </div>
     </footer>
 </body>
