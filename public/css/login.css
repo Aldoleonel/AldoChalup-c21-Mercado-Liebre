@@ -38,12 +38,8 @@ ul {
 
 
 /*HEADER*/
-header {
+.home__header {
     background-color: var(--colorAmarillo);
-    font-family: var(--tipografiaGeneral);
-    font-size: 12px;
-    display: flex;
-    flex-direction: column;
 }
 .home__header--logo {
     width: 50%;
@@ -100,10 +96,7 @@ header {
 
 .header__parrafo--contenedor {
     display: flex;
-    
     justify-content: center;
-    
-    
 }
 
 .header__parrafo {
@@ -117,7 +110,13 @@ header {
 }
 
 .home__header--descripcion {
-    display: none;
+    margin-left: 15px;
+    font-size: 18px;
+    height: 0;
+    overflow: hidden;
+}
+.showMenu {
+    height: auto;
 }
 
 .home__header--nav--menu ul {
@@ -159,53 +158,9 @@ header {
 }
 
 .home__header-baner {
-    display: none;
-    
-}
-
-
-
-/*MAIN*/
-
-.login__main {
     display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100%;
-    height: 300px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    
-    
-}
-.login-box {
-    width: 70%;
-    border: 1px solid var(--colorGrisOscuro);
-    padding: 50px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px;
-}
-.login-correo-box input {
-    width: 100%;
-    margin-bottom: 30px;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-}
-.login-contraseña-box input {
-    width: 100%;
-    margin-bottom: 30px;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-}
-.login-registra-entrar button {
-    width: 100%;   
-    border: none;
-    padding: 10px;
-    border-radius: 5px; 
-    background-color: var(--colorCeleste);
-    color: white;
+    max-height: 250px;
 }
 
 
@@ -273,7 +228,7 @@ Footer i {
         display: flex;
         align-items: center;
         margin-bottom: 50px;
-        margin-top: 20px;
+        padding-top: 20px;
         margin-left: 15px;
         gap: 5px;
     }
