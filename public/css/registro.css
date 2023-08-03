@@ -38,6 +38,9 @@ ul {
 
 
 /*HEADER*/
+.home__header {
+    background-color: var(--colorAmarillo);
+}
 .home__header--logo {
     width: 50%;
     margin-left: 30px;
@@ -109,11 +112,7 @@ ul {
 .home__header--descripcion {
     margin-left: 15px;
     font-size: 18px;
-    height: 0;
-    overflow: hidden;
-}
-.showMenu {
-    height: auto;
+    display: none;
 }
 
 .home__header--nav--menu ul {
@@ -160,6 +159,48 @@ ul {
     max-height: 250px;
 }
 
+/*MAIN*/
+
+.login__main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+    
+}
+.login-box {
+    width: 70%;
+    border: 1px solid var(--colorGrisOscuro);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px;
+}
+.login-correo-box input {
+    width: 100%;
+    margin-bottom: 30px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+.login-contraseña-box input {
+    width: 100%;
+    margin-bottom: 30px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+.login-registra-entrar button {
+    width: 100%;   
+    border: none;
+    padding: 10px;
+    border-radius: 5px; 
+    background-color: var(--colorCeleste);
+    color: white;
+}
 
 /*MAIN*/
 
@@ -318,6 +359,9 @@ Footer i {
     /*HEADER*/
 
 
+    /*HEADER*/
+
+
     .home__header-container {
         display: flex;
         justify-content: space-evenly;
@@ -330,7 +374,7 @@ Footer i {
         margin-left: 0;
         margin-top: 0;
         margin-bottom: 0;
-        
+        width: 36%;
     }
     .header__parrafo {
         margin: 0;
@@ -351,7 +395,7 @@ Footer i {
         display: flex;
         align-items: center;
         margin-bottom: 50px;
-        margin-top: 20px;
+        padding-top: 20px;
         margin-left: 15px;
         gap: 5px;
     }
@@ -372,7 +416,8 @@ Footer i {
         display: none;
     }
     .home__header--nav--menu {
-        margin-left: 5px;
+        margin-left: 15px;
+        margin-right: 15px;
     }
     .home__header--nav--menu .home__header--descripcion {
         display: flex;                
@@ -388,29 +433,35 @@ Footer i {
     @media (min-width:769px){
     
         .home__header--logo {
-            width: 47%;
+            width: 26%;
         }
         .home__header-container .home__header-box-input-lupa {
             width: 600px;
         }
+        .home__header--nav--menu .home__header--descripcion {
+            margin-left: 15px;
+            margin-right: 20px;
+            font-size: 15px;
+        }
+        .home__header--descripcion ul li a {
+            font-size: 15px;
+        }
+        
         .home__header--dolar {
             width: 1.5%;
             justify-content: center;
         }
         
-        .header__input--contenedor {
-            width: auto;
-            
-        }
+        
         .header__parrafo--contenedor {
             width: 300px;
-            
+            gap: 5px;
             margin-right: 15px;
             margin-left: 0px;
             
         }
-        .header__parrafo--contenedor {
-            gap: 5px;
+        .header__parrafo {
+            font-size: 15px;
         }
 
 
